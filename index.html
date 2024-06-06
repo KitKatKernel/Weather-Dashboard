@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="assets/css/style.css"
+</head>
+<body>
+    <section class="hero is-link has-text-centered">
+        <div class="hero-body">
+          <p class="title">Weather Dashboard</p>
+          <p class="subtitle">Your Travel Companion for Every Forecast</p>
+        </div>
+      </section>
+
+    <section>
+        <label class="label">Search for your city</label>
+        <div class="field has-addons">
+            <div class="control">
+              <input class="input" type="text" placeholder="Hartford, CT">
+            </div>
+            <div class="control">
+              <button class="button is-info">
+                Search
+              </button>
+            </div>
+          </div>
+    </section>
+
+    <div class="fixed-grid">
+        <div class="grid">
+            <div class="cell py-3 px-4 has-background-link has-text-white has-radius-normal">New York</div>
+            <div class="cell py-3 px-4 has-background-link has-text-white has-radius-normal">Miami</div>
+            <div class="cell py-3 px-4 has-background-link has-text-white has-radius-normal">Los Angeles</div>
+            <div class="cell py-3 px-4 has-background-link has-text-white has-radius-normal">Seattle</div>
+            <div class="cell py-3 px-4 has-background-link has-text-white has-radius-normal">Dallas</div>
+        </div>
+    </div>
+
+    <article class="message is-warning mb-0">
+        <div class="message-header">
+          <p>Current Weather</p>
+        </div>
+        <div class="message-body">
+          current weather goes here
+        </div>
+      </article>
+
+      <article class="message is-danger mb-0">
+        <div class="message-header">
+          <p>Five Day Forecast</p>
+        </div>
+        <div class="message-body">
+          Five day forecast goes here
+        </div>
+      </article>
+
+</body>
+</html>
+
