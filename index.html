@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <!-- target is .weather-header -->
   <section class="hero has-text-centered weather-header">
     <div class="hero-body">
       <p class="title">Weather Dashboard</p>
       <p class="subtitle">Your Travel Companion for Every Forecast</p>
     </div>
   </section>
-
+  <!-- target is gradient-background -->
   <section class="section gradient-background">
     <div class="container">
       <div class="columns">
@@ -22,9 +23,13 @@
           <label class="label search-label">Search for your city</label>
           <div class="field has-addons">
             <div class="control">
-              <input class="input city-input" type="text" placeholder="Hartford">
+              <!-- target is .city-input -->
+              <input class="input city-input" type="text" placeholder="City (Required)">
+              <input class="input state-input" type="text" placeholder="State (optional)">
+              <input class="input country-input" type="text" placeholder="Country (optional)">
             </div>
             <div class="control">
+              <!-- target is .city-button -->
               <button class="button city-button">
                 Search
               </button>
@@ -40,25 +45,22 @@
               Current weather goes here
             </div>
           </article>
-
+          
+          <article class="message mb-0">
+            <div class="message-header">
+              <p>Five Day Forecast</p>
+            </div>
+          </article>
           <div class="fixed-grid">
             <div class="grid">
-              <div class="cell py-3 px-4 day-1">Day 1</div>
-              <div class="cell py-3 px-4 day-2">Day 2</div>
+              <!-- targets are .day-1, .day-2, etc etc -->
+              <div class="cell py-3 px-4 day-1">Today</div>
+              <div class="cell py-3 px-4 day-2">Tomorrow</div>
               <div class="cell py-3 px-4 day-3">Day 3</div>
               <div class="cell py-3 px-4 day-4">Day 4</div>
               <div class="cell py-3 px-4 day-5">Day 5</div>
             </div>
           </div>
-
-          <article class="message mb-0">
-            <div class="message-header">
-              <p>Five Day Forecast</p>
-            </div>
-            <div class="message-body">
-              Five day forecast goes here
-            </div>
-          </article>
         </div>
       </div>
     </div>

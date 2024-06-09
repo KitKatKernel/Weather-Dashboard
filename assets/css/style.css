@@ -32,42 +32,65 @@
     --gradient-radial: radial-gradient(var(--melon), var(--vista-blue), var(--blue-ncs), var(--honolulu-blue), var(--rich-black));
   }
 
+  .title {
+    color: #eeeeee;
+    text-shadow: 1px 1px 1px var(--rich-black-hsl); 
+  }
+  
+  .subtitle {
+    color: #eeeeee;
+    text-shadow: 1px 1px 1px var(--rich-black-hsl);
+  }
+
   .gradient-background {
-    background: linear-gradient(var(--honolulu-blue), var(--rich-black));
+    background: linear-gradient(var(--honolulu-blue), var(--melon));
     color: var(--melon); 
     height: 100vh;    
   }
 
-  .city-button {
-    border: none;
-  }
-
-  .search-label {
+   .search-label {
     color: var(--melon);
+    text-shadow: 1px 1px 1px var(--rich-black-hsl); 
   }
 
-  .container {
+   .container {
     max-width: 600px;
     margin: 0 auto;
   }
   
-  .weather-header {
+   .weather-header {
     background: var(--gradient-top-right);
     color: var(--rich-black);
+    position: relative; 
+  }
+  
+  .weather-header::after {
+    display: block;
+    height: 3px; 
+    background: var(--gradient-bottom-left);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
   
   .city-input {
-    border-color: var(--vista-blue);
+    border-color: var(--melon);
+    border-width: 1px;
   }
   
   .city-button {
     background-color: var(--blue-ncs);
     color: var(--melon);
+    text-shadow: 1px 1px 1px var(--rich-black-hsl);
+    border-color: var(--vista-blue);
+    border-width: 1px;
   }
   
   .message-header {
     background-color: var(--honolulu-blue);
     color: var(--melon);
+    text-shadow: 1px 1px 1px var(--rich-black-hsl);
   }
   
   .message-body {
@@ -83,9 +106,14 @@
   .cell {
     background-color: var(--blue-ncs);
     color: var(--melon);
+    text-shadow: 1px 1px 1px var(--rich-black-hsl);
     padding: 1rem;
     border-radius: 0.25rem;
     flex: 1;
     text-align: center;
   }
   
+  .message-header+.message-body {
+    color: white;
+    text-shadow: 1px 1px 1px var(--rich-black);
+  }
