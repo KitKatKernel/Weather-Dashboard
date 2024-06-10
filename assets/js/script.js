@@ -1,5 +1,5 @@
 const apiKey = `0859c7d7315bb3c27acac4f80f84a44b`;
-const cityUrl = `http://api.openweathermap.org/geo/1.0/direct?q=`;
+const cityUrl = `https://api.openweathermap.org/geo/1.0/direct?q=`;
 const citySearchButton = document.querySelector('.city-button');
 const citySearchInput = document.querySelector('.city-input');
 const stateSearch = document.querySelector('.state-input');
@@ -96,7 +96,7 @@ const countrySearch = document.querySelector('.country-input');
                 document.getElementById('description').textContent = description;
                 document.getElementById('wind').textContent = windSpeed;
                 const weatherIcon = document.getElementById('weather-icon');
-                    weatherIcon.src = `http://openweathermap.org/img/wn/${icon}.png`;
+                    weatherIcon.src = `https://openweathermap.org/img/wn/${icon}.png`;
                     weatherIcon.style.display = 'block'; 
                 document.getElementById('current-weather').style.display = 'block';
 
@@ -139,7 +139,7 @@ const countrySearch = document.querySelector('.country-input');
                             <p>Low: ${Math.round(forecast.low)}F</p>
                             <p>Wind: ${forecast.wind} MPH</p>
                             <p>Humidity: ${forecast.humidity}%</p>
-                            <img src="http://openweathermap.org/img/wn/${forecast.icon}.png" alt="${forecast.description}">
+                            <img src="https://openweathermap.org/img/wn/${forecast.icon}.png" alt="${forecast.description}">
                         `;
                     }
                 }
