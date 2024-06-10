@@ -112,6 +112,8 @@ const countrySearch = document.querySelector('.country-input');
                         dailyForecast[date].low = weather.main.temp; //sets low temp for day
                         dailyForecast[date].icon = weather.weather[0].icon; // our weather icon
                         dailyForecast[date].description = weather.weather[0].description; // description
+                        dailyForecast[date].wind = weather.wind.speed; //sets wind speed
+                        dailyForecast[date].humidity = weather.main.humidity; //sets humidity
                     } else {
                         //Check if temperature is higher than recorded high, if so then update to our dailyForecast for that date
                         if (weather.main.temp > dailyForecast[date].high) {
@@ -135,6 +137,8 @@ const countrySearch = document.querySelector('.country-input');
                             <p>${dayjs(date).format('dddd')}</p>
                             <p>High: ${Math.round(forecast.high)}F</p>
                             <p>Low: ${Math.round(forecast.low)}F</p>
+                            <p>Wind: ${forecast.wind} MPH</p>
+                            <p>Humidity: ${forecast.humidity}%</p>
                             <img src="http://openweathermap.org/img/wn/${forecast.icon}.png" alt="${forecast.description}">
                         `;
                     }
