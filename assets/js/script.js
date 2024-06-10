@@ -30,10 +30,23 @@ const countrySearch = document.querySelector('.country-input');
         return response.json();
     })
     .then(function(data) {
+        console.log(data)
         if (data.length > 0) {
             const lat = data[0].lat
             const lon = data[0].lon
             console.log('lat:', lat, 'lon:', lon)
+
+            const weatherApiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`
+            fetch(weatherApiUrl)
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(weatherData) {
+                console.log(weatherData);
+            })
+            .catch(function(error) {
+                console.log(`Error fetching weather data`, error);
+            });
         } else {
             console.log ('City not found')
         }
@@ -43,3 +56,6 @@ const countrySearch = document.querySelector('.country-input');
     })
 
    });
+
+
+    
