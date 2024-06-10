@@ -47,7 +47,7 @@
     color: var(--melon); 
     height: 100vh;    
   }
-
+  /* Style for search lable */
    .search-label {
     color: var(--melon);
     text-shadow: 1px 1px 1px var(--rich-black-hsl); 
@@ -64,6 +64,7 @@
     position: relative; 
   }
   
+  /* Adds 3px height line with gradient variable from the color template from Coolors.co to bottom of header */
   .weather-header::after {
     display: block;
     height: 3px; 
@@ -74,9 +75,12 @@
     width: 100%;
   }
   
-  .city-input {
+  .city-input,
+  .state-input,
+  .country-input {
     border-color: var(--melon);
     border-width: 1px;
+    margin-bottom: 10px; 
   }
   
   .city-button {
@@ -85,7 +89,11 @@
     text-shadow: 1px 1px 1px var(--rich-black-hsl);
     border-color: var(--vista-blue);
     border-width: 1px;
-  }
+    height: 94%; /* Stretching search button to align with all search inputs */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   
   .message-header {
     background-color: var(--honolulu-blue);
@@ -113,7 +121,19 @@
     text-align: center;
   }
   
+  /* Extra style for message body directly after header */
   .message-header+.message-body {
     color: white;
     text-shadow: 1px 1px 1px var(--rich-black);
   }
+
+  /* This stylizies the search history elements that are created */
+  .button.is-info {
+    background-color: var(--honolulu-blue);
+    color: var(--melon);
+    text-shadow: 1px 1px 1px var(--rich-black-hsl);
+    border-color: var(--vista-blue);
+    border-width: 1px;
+    width: 100%; 
+    margin-bottom: 3px;
+}
