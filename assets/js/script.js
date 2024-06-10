@@ -63,15 +63,17 @@ const countrySearch = document.querySelector('.country-input');
                 const temp = closestWeather.main.temp; // Extract temperature
                 const humidity = closestWeather.main.humidity; // Extract humidity
                 const description = closestWeather.weather[0].description; // Extract description
-                const icon = closestWeather.weather[0].icon; // Extract icon
                 const windSpeed = closestWeather.wind.speed; // Extract wind speed
+                const icon = closestWeather.weather[0].icon;
             
-                // Log the extracted data
-                console.log('Temperature:', temp);
-                console.log('Humidity:', humidity);
-                console.log('Description:', description);
-                console.log('Icon:', icon);
-                console.log('Wind Speed:', windSpeed);
+               document.getElementById('temp').textContent = temp;
+               document.getElementById('humidity').textContent = humidity
+               document.getElementById('description').textContent - description
+               document.getElementById('wind').textContent = windSpeed
+               const weatherIcon = document.getElementById('weather-icon');
+                weatherIcon.src = `http://openweathermap.org/img/wn/${icon}.png`;
+                weatherIcon.style.display = 'block'; 
+               document.getElementById('current-weather').style.display = 'block';
             })
             .catch(function(error) {
                 console.log(`Error fetching weather data`, error);
