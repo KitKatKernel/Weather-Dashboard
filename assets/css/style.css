@@ -137,7 +137,7 @@
     width: 100%; 
     margin-bottom: 3px;
 }
-
+/* Targets the first p element in each cell, using it to make day of week larger and bold  */
   .cell p:first-child {
     font-size: 1.1em; 
     font-weight: bold; 
