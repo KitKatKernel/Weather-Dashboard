@@ -39,6 +39,10 @@ const countrySearch = document.querySelector('.country-input');
         queryStr += `,${country}`;
     }
     const cityApiUrl = `${cityUrl}${queryStr}&limit=${limit}&appid=${apiKey}`;
+    // Clear input values after submitting, forgot to add this and thank god for others testing your stuff lol.
+    citySearchInput.value = '';
+    stateSearch.value = '';
+    countrySearch.value = '';
 
     // Fetch coords from Geocoding api
     fetch(cityApiUrl)
