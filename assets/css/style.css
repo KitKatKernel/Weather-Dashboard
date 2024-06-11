@@ -1,146 +1,169 @@
 :root {
-    /* CSS HEX */
-    --melon: #f7af9dff;
-    --vista-blue: #89aae6ff;
-    --blue-ncs: #3685b5ff;
-    --honolulu-blue: #0471a6ff;
-    --rich-black: #061826ff;
-  
-    /* CSS HSL */
-    --melon-hsl: hsla(12, 85%, 79%, 1);
-    --vista-blue-hsl: hsla(219, 65%, 72%, 1);
-    --blue-ncs-hsl: hsla(203, 54%, 46%, 1);
-    --honolulu-blue-hsl: hsla(200, 95%, 33%, 1);
-    --rich-black-hsl: hsla(206, 73%, 9%, 1);
-  
-    /* CSS RGB */
-    --melon-rgb: rgba(247, 175, 157, 1);
-    --vista-blue-rgb: rgba(137, 170, 230, 1);
-    --blue-ncs-rgb: rgba(54, 133, 181, 1);
-    --honolulu-blue-rgb: rgba(4, 113, 166, 1);
-    --rich-black-rgb: rgba(6, 24, 38, 1);
-  
-    /* CSS Gradient */
-    --gradient-top: linear-gradient(0deg, var(--melon), var(--vista-blue), var(--blue-ncs), var(--honolulu-blue), var(--rich-black));
-    --gradient-right: linear-gradient(90deg, var(--melon), var(--vista-blue), var(--blue-ncs), var(--honolulu-blue), var(--rich-black));
-    --gradient-bottom: linear-gradient(180deg, var(--melon), var(--vista-blue), var(--blue-ncs), var(--honolulu-blue), var(--rich-black));
-    --gradient-left: linear-gradient(270deg, var(--melon), var(--vista-blue), var(--blue-ncs), var(--honolulu-blue), var(--rich-black));
-    --gradient-top-right: linear-gradient(45deg, var(--melon), var(--vista-blue), var(--blue-ncs), var(--honolulu-blue), var(--rich-black));
-    --gradient-bottom-right: linear-gradient(135deg, var(--melon), var(--vista-blue), var(--blue-ncs), var(--honolulu-blue), var(--rich-black));
-    --gradient-top-left: linear-gradient(225deg, var(--melon), var(--vista-blue), var(--blue-ncs), var(--honolulu-blue), var(--rich-black));
-    --gradient-bottom-left: linear-gradient(315deg, var(--melon), var(--vista-blue), var(--blue-ncs), var(--honolulu-blue), var(--rich-black));
-    --gradient-radial: radial-gradient(var(--melon), var(--vista-blue), var(--blue-ncs), var(--honolulu-blue), var(--rich-black));
-  }
+  /* CSS HEX */
+  --melon: #f7af9dff;
+  --vista-blue: #89aae6ff;
+  --blue-ncs: #3685b5ff;
+  --honolulu-blue: #0471a6ff;
+  --rich-black: #061826ff;
 
-  .title {
-    color: #eeeeee;
-    text-shadow: 1px 1px 1px var(--rich-black-hsl); 
-  }
-  
-  .subtitle {
-    color: #eeeeee;
-    text-shadow: 1px 1px 1px var(--rich-black-hsl);
-  }
+  /* CSS HSL */
+  --melon-hsl: hsla(12, 85%, 79%, 1);
+  --vista-blue-hsl: hsla(219, 65%, 72%, 1);
+  --blue-ncs-hsl: hsla(203, 54%, 46%, 1);
+  --honolulu-blue-hsl: hsla(200, 95%, 33%, 1);
+  --rich-black-hsl: hsla(206, 73%, 9%, 1);
 
-  .gradient-background {
-    background: linear-gradient(var(--honolulu-blue), var(--melon));
-    color: var(--melon); 
-    height: 100vh;    
-  }
-  /* Style for search lable */
-   .search-label {
-    color: var(--melon);
-    text-shadow: 1px 1px 1px var(--rich-black-hsl); 
-  }
+  /* CSS RGB */
+  --melon-rgb: rgba(247, 175, 157, 1);
+  --vista-blue-rgb: rgba(137, 170, 230, 1);
+  --blue-ncs-rgb: rgba(54, 133, 181, 1);
+  --honolulu-blue-rgb: rgba(4, 113, 166, 1);
+  --rich-black-rgb: rgba(6, 24, 38, 1);
 
-   .container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-   .weather-header {
-    background: var(--gradient-top-right);
-    color: var(--rich-black);
-    position: relative; 
-  }
-  
-  /* Adds 3px height line with gradient variable from the color template from Coolors.co to bottom of header */
-  .weather-header::after {
-    display: block;
-    height: 3px; 
-    background: var(--gradient-bottom-left);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-  
-  .city-input,
-  .state-input,
-  .country-input {
-    border-color: var(--melon);
-    border-width: 1px;
-    margin-bottom: 10px; 
-  }
-  
-  .city-button {
-    background-color: var(--blue-ncs);
-    color: var(--melon);
-    text-shadow: 1px 1px 1px var(--rich-black-hsl);
-    border-color: var(--vista-blue);
-    border-width: 1px;
-    height: 94%; /* Stretching search button to align with all search inputs */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  /* CSS Gradient */
+  --gradient-top: linear-gradient(0deg, var(--melon), var(--vista-blue), var(--blue-ncs), var(--honolulu-blue), var(--rich-black));
+  --gradient-right: linear-gradient(90deg, var(--melon), var(--vista-blue), var(--blue-ncs), var(--honolulu-blue), var(--rich-black));
+  --gradient-bottom: linear-gradient(180deg, var(--melon), var(--vista-blue), var(--blue-ncs), var(--honolulu-blue), var(--rich-black));
+  --gradient-left: linear-gradient(270deg, var(--melon), var(--vista-blue), var(--blue-ncs), var(--honolulu-blue), var(--rich-black));
+  --gradient-top-right: linear-gradient(45deg, var(--melon), var(--vista-blue), var(--blue-ncs), var(--honolulu-blue), var(--rich-black));
+  --gradient-bottom-right: linear-gradient(135deg, var(--melon), var(--vista-blue), var(--blue-ncs), var(--honolulu-blue), var(--rich-black));
+  --gradient-top-left: linear-gradient(225deg, var(--melon), var(--vista-blue), var(--blue-ncs), var(--honolulu-blue), var(--rich-black));
+  --gradient-bottom-left: linear-gradient(315deg, var(--melon), var(--vista-blue), var(--blue-ncs), var(--honolulu-blue), var(--rich-black));
+  --gradient-radial: radial-gradient(var(--melon), var(--vista-blue), var(--blue-ncs), var(--honolulu-blue), var(--rich-black));
 }
-  
-  .message-header {
-    background-color: var(--honolulu-blue);
-    color: var(--melon);
-    text-shadow: 1px 1px 1px var(--rich-black-hsl);
-  }
-  
-  .message-body {
-    background-color: var(--vista-blue);
-    color: var(--rich-black);
-  }
-  
-  .grid {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .cell {
-    background-color: var(--blue-ncs);
-    color: var(--melon);
-    text-shadow: 1px 1px 1px var(--rich-black-hsl);
-    padding: 1rem;
-    border-radius: 0.25rem;
-    flex: 1;
-    text-align: center;
-  }
-  
-  /* Extra style for message body directly after header */
-  .message-header+.message-body {
-    color: white;
-    text-shadow: 1px 1px 1px var(--rich-black);
-  }
 
-  /* This stylizies the search history elements that are created */
-  .button.is-info {
-    background-color: var(--honolulu-blue);
-    color: var(--melon);
-    text-shadow: 1px 1px 1px var(--rich-black-hsl);
-    border-color: var(--vista-blue);
-    border-width: 1px;
-    width: 100%; 
-    margin-bottom: 3px;
+.title {
+  color: #eeeeee;
+  text-shadow: 1px 1px 1px var(--rich-black-hsl); 
+}
+
+.subtitle {
+  color: #eeeeee;
+  text-shadow: 1px 1px 1px var(--rich-black-hsl);
+}
+
+.gradient-background {
+  background: linear-gradient(var(--honolulu-blue), var(--melon));
+  color: var(--melon); 
+  min-height: 100vh;
+  background-size: cover;    
+}
+/* Style for search lable */
+ .search-label {
+  color: var(--melon);
+  text-shadow: 1px 1px 1px var(--rich-black-hsl); 
+}
+
+ .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+ .weather-header {
+  background: var(--gradient-top-right);
+  color: var(--rich-black);
+  position: relative; 
+}
+
+/* Adds 3px height line with gradient variable from the color template from Coolors.co to bottom of header */
+.weather-header::after {
+  display: block;
+  height: 3px; 
+  background: var(--gradient-bottom-left);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.city-input,
+.state-input,
+.country-input {
+  border-color: var(--melon);
+  border-width: 1px;
+  margin-bottom: 10px; 
+}
+
+.city-button {
+  background-color: var(--blue-ncs);
+  color: var(--melon);
+  text-shadow: 1px 1px 1px var(--rich-black-hsl);
+  border-color: var(--vista-blue);
+  border-width: 1px;
+  height: 94%; /* Stretching search button to align with all search inputs */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message-header {
+  background-color: var(--honolulu-blue);
+  color: var(--melon);
+  text-shadow: 1px 1px 1px var(--rich-black-hsl);
+}
+
+.message-body {
+  background-color: var(--vista-blue);
+  color: var(--rich-black);
+}
+
+.grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.cell {
+  background-color: var(--blue-ncs);
+  color: var(--melon);
+  text-shadow: 1px 1px 1px var(--rich-black-hsl);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  flex: 1;
+  text-align: center;
+}
+
+/* Extra style for message body directly after header */
+.message-header+.message-body {
+  color: white;
+  text-shadow: 1px 1px 1px var(--rich-black);
+}
+
+/* This stylizies the search history elements that are created */
+.button.is-info {
+  background-color: var(--honolulu-blue);
+  color: var(--melon);
+  text-shadow: 1px 1px 1px var(--rich-black-hsl);
+  border-color: var(--vista-blue);
+  border-width: 1px;
+  width: 100%; 
+  margin-bottom: 3px;
 }
 /* Targets the first p element in each cell, using it to make day of week larger and bold  */
-  .cell p:first-child {
-    font-size: 1.1em; 
-    font-weight: bold; 
-    color: var(--melon);
-    margin-bottom: 5px;
+.cell p:first-child {
+  font-size: 1.1em; 
+  font-weight: bold; 
+  color: var(--melon);
+  margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+.columns {
+  flex-direction: column;
+}
+
+.city-input, .state-input, .country-input {
+  margin-bottom: 10px; 
+}
+
+.city-button {
+  width: 100%;
+}
+
+.grid {
+  flex-direction: column;
+}
+
+.cell {
+  min-width: 100%; 
+}
 }
