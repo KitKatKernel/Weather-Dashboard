@@ -21,7 +21,7 @@ Explore the contents of this guide:
 ## Installation
 
 No installation is required:
-1. Open up the page on your favorite browser: [Weather Dashboard Project](https://kitkatkernel.github.io/Weather-Dashboard-Project/)
+1. Open up the page on your favorite browser: [Weather Dashboard Project](https://kitkatkernel.github.io/Weather-Dashboard/)
 
 ## Usage
 
